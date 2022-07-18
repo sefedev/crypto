@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "emmet": "2.3.6",
+    "git-commit": "0.0.3",
     "prettier": "2.7.1",
     "react": "18.0.0",
     "react-code-snippets": "0.0.16",

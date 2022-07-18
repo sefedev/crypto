@@ -8,7 +8,6 @@ const App = () => {
     <div>
       <Header />
       <Search />
-      <CryptoAssetsList />
     </div>
   );
 };
