@@ -1,14 +1,24 @@
 import React from "react";
-import Header from "./components/Header";
-import Search from "./components/Search";
-import CryptoAssetsList from "./components/CryptoAssetsList";
+import Home from "./pages/Home";
+import CryptoAssetDetails from "./pages/CryptoAssetDetails";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Search />
-    </div>
+    <>
+      <div>
+        <Router>
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route path="/cryptodetails">
+              <CryptoAssetDetails />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </>
   );
 };
 
