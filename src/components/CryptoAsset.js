@@ -1,9 +1,12 @@
 import React from "react";
 
-const CryptoAsset = () => {
+const CryptoAsset = ({ cryptoAsset }) => {
   return (
     <>
-      <h1>CryptoAsset</h1>
+      <ul>
+        <li>{cryptoAsset.name}</li>
+        <li>{cryptoAsset.price_change_24h}</li>
+      </ul>
     </>
   );
 };

@@ -3,7 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <p>Footer</p>
+      <p>
+        Designed with <span style={{ color: "red" }}>&hearts;</span> by Sefe
+      </p>
     </>
   );
 };
