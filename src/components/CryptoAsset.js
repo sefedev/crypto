@@ -4,8 +4,19 @@ const CryptoAsset = ({ cryptoAsset }) => {
   return (
     <>
       <ul>
-        <li>{cryptoAsset.name}</li>
-        <li>{cryptoAsset.price_change_24h}</li>
+        <li>
+          <span>
+            <img
+              src={cryptoAsset.img}
+              alt={cryptoAsset.symbol}
+              width="100%"
+              height="100"
+            />
+          </span>
+          <span>{cryptoAsset.name}</span>
+          <span>${cryptoAsset.current_price}</span>
+          <span>${cryptoAsset.market_cap}</span>
+        </li>
       </ul>
     </>
   );
