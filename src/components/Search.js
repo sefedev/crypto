@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <>
       <input type="search" placeholder="Search CryptoAsset..." />
-      <input type="submit" value="Search" />
+      <button className="bg-sky-500/100">Search</button>
     </>
   );
 };

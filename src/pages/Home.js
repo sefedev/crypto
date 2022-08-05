@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Search from "../components/Search";
-import CryptoAssetsList from "../components/CryptoAssetsList";
 import Footer from "../components/Footer";
-import Pagination from "../components/Pagination";
-import useFetch from "../components/useFetch";
+import CryptoAssetList from "../components/CryptoAssetsList";
+import useFetch from "../store/useFetch";
 
 const Home = () => {
   const { data: cryptoAssets } = useFetch(
@@ -14,7 +13,7 @@ const Home = () => {
     <>
       <Header />
       <Search />
-      <Pagination cryptoAssets={cryptoAssets} />
+      <CryptoAssetList cryptoAssets={cryptoAssets} />
       <Footer />
     </>
   );
